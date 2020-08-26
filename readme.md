@@ -32,5 +32,5 @@
 # Change Host and Port in Analyze.py
 `analyze.py line 49`
 
-# un script in background
+# run script in background
 `nohup python analyze.py`
