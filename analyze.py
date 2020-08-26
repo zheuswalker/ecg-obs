@@ -23,7 +23,7 @@ def parse_value(s):
 def main():
     period = int(request.form.get("period"))
     factor = float(request.form.get("factor"))
-    data = request.form.get("data")
+    data = str(request.form.get("data"))
     if not period: raise AssertionError('period is not defined')
     if not isinstance(period, numbers.Number): raise AssertionError('period is not a number')
 
@@ -46,5 +46,5 @@ def main():
 
 
 if __name__ == "__main__":
-        app.run(host='192.168.100.10', port=5000, debug=True)   
+        app.run(host='206.189.87.169', port=5000, debug=True)   
 app.run(debug=True)
