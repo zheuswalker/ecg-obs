@@ -1,26 +1,29 @@
 # Installation
-`virtualenv flask`
-`cd flask`
-`source bin/activate`
-`pip install flask`
-`pip install requests`
+`virtualenv flask` <br>
+`cd flask`<br>
+`source bin/activate`<br>
+`pip install flask`<br>
+`pip install requests`<br>
 
 # run script
-`python analyze.py`
+`python analyze.py`<br>
 
 # if it says already running
-`sudo kill $(sudo lsof -t -i:5000)`
+`sudo kill $(sudo lsof -t -i:5000)`<br>
 
 # if run but 404 check ufw
-`ufw enable`
+`ufw enable`<br>
 
 # check port 5000 if open
-`ufw status numbered`
+`ufw status numbered`<br>
 
 # enable port 5000 if closed
-`ufw enable 5000/tcp`
-`ufw enable 5000/udp`
+`ufw enable 5000/tcp`<br>
+`ufw enable 5000/udp`<br>
 
+# DONT LEAVE YOUR SESSION NOT OPENING PORT 22 FOR SSH
+`ufw enable 22/tcp`<br>
+`ufw enable 22/udp`<br>
 
 # sample query
 `curl --location --request POST 'http://206.189.87.169:5000/analyze_ecg' \
@@ -30,7 +33,7 @@
 
 
 # Change Host and Port in Analyze.py
-`analyze.py line 49`
+`analyze.py line 49`<br>
 
 # run script in background
-`nohup python analyze.py`
+`nohup python analyze.py`<br>
