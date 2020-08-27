@@ -21,6 +21,9 @@
 `ufw enable 5000/tcp`<br>
 `ufw enable 5000/udp`<br>
 
+# DONT LEAVE YOUR SESSION NOT OPENING PORT 22 FOR SSH
+`ufw enable 22/tcp`<br>
+`ufw enable 22/udp`<br>
 
 # sample query
 `curl --location --request POST 'http://206.189.87.169:5000/analyze_ecg' \
